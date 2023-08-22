@@ -1,0 +1,78 @@
+<!-- Para enviar ao git hub precisa rodar esses três: git add .
+git commit -m "Tarefa Terminada"
+git push
+ -->
+
+ <!-- Nome: Aline Santos Araujo 
+      RA: 060083
+      Curso: Engenharia da Computação
+-->
+
+ <!-- Atividade: 
+    1 - Crie um formulário com 4 tipos de input diferentes
+    2 - Coloque nele também uma pergunta que utiliza inputs do tipo radio. Coloque pelo menos 4 opções
+    3 - Coloque também um select com pelo menos 4 options
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 21/08 - Aline Santos Araujo</title>
+ </head>
+ <body>
+    <p>Seja Bem-Vindo a Atividade da Aline</p>
+    <p>Para se cadastrar preciso de algumas informações...</p>
+    <form action="">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+        </div>
+        <div>
+            <label for="nascimento">Informa a data do seu nascimento</label>
+            <input type="date" id="nascimento">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="" id="email">
+        </div>
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" name="" id="senha">
+        </div>
+        <div>
+            <label for="materia">Selecione a materia que está cursando:</label>
+            <select name="materia" id="materia" required>
+                <!-- essa primeira linha pra não ter nenhum pré selecionado na pagina -->
+                <option selected disabled>Selecione</option>
+                <option value="tendencia">Tendências em Computação</option>
+                <option value="interacao">Interação Humano Computador</option>
+                <option value="direito">Direito para Engenheiros</option>
+                <option value="empreendedorismo">Empreendedorismo</option>
+            </select>
+        </div>
+        <div>
+            <p>Qual o período em que você assiste a aula dessa matéria?</p>
+            <div>
+                <!-- colocamos o name para que um botão seja acionado por vez -->
+                <input type="radio" id="diurno" name="periodo">
+                <label for="diurno">Diurno</label>
+            </div>
+            <div>
+                <input type="radio" id="matutino" name="periodo">
+                <label for="matutino">Matutino</label>
+            </div>
+            <div>
+                <input type="radio" id="noturno" name="periodo">
+                <label for="noturno">Noturno</label>
+            </div>
+            <div>
+                <input type="radio" id="ead" name="periodo">
+                <label for="ead">Não há um período fixo / EAD</label>
+            </div>
+        </div>
+        <button>Cadastrar</button>
+    </form>    
+ </body>
+ </html>

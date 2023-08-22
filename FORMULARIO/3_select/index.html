@@ -31,7 +31,9 @@
         <!-- select -->
         <div>
             <label for="curso">Selecione o seu curso:</label>
-            <select name="curso" id="curso">
+            <select name="curso" id="curso" required>
+                <!-- essa primeira linha pra não ter nenhum pré selecionado na pagina -->
+                <option selected disabled>Selecione</option>
                 <option value="engenharia">Engenharia da Computação</option>
                 <option value="ciencia">Ciência da Computação</option>
                 <option value="analise">Análise e Desenvolvimento de Sistemas</option>
