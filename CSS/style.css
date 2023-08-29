@@ -1,0 +1,41 @@
+h3 {
+    font-size: 16px;
+    color: bisque;
+}
+
+p {
+    color: chartreuse;
+}
+
+/* Pra ele entender que estamos falando da classe precisa colocar um ponto antes */
+.parágrafo {
+    background-color: aquamarine;
+    color: black;
+    font-size: 16px;
+}
+
+/* Pra ele entender que estamos falando do id precisa colocar # antes */
+#titulo-exclusivo {
+    background-color: darkgray;
+    color: beige;
+}
+
+/* Demosntração de especificidade no CSS */
+#algum-titulo {
+    background-color: indianred;
+}
+
+.titulo {
+    background-color: darksalmon;
+}
+
+h2 {
+    /* o !important vai ignorar todas as regras de especificidade */
+    background-color: cornflowerblue !important;
+}
+
+/* Hexadecimal - #RRGGBB - 0 1 2 3 4 5 6 7 8 9 A B C D E F */
+.hexadecimal {
+    background-color: #5f5f5f;
+    color: #ffffff;
+}

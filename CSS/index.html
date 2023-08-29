@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- LEMBRAR: O CSS sempre executa de cima pra baixo -->
+    <!-- 2 - CSS internal (estilização) -->
+    <style>
+        p {
+            font-size: 20px;
+            color:brown
+        }
+    </style>
+
+    <!-- 3 - CSS external (estilização) -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- 1 - CSS inline -->
+    <h1 style="color:violet;">Mudar a cor com o Inline</h1>
+    <h2 style="color: palevioletred;">Outro título</h2>
+
+    <!-- 2 - CSS internal -->
+    <p>Eu fui estilizado pelo internal CSS</p>
+    <p>Mais um</p>
+    <p>Outro</p>
+
+    <!-- 3 - CSS external -->
+    <h3>Meu título estilizado com CSS externo</h3>
+
+    <!-- 4 - Ordem de importância no CSS -->
+    <p style="color: blueviolet;">Ordem de importância no CSS</p>
+
+    <!-- Atributos globais: podem ser usados em qualquer elemento que exista -->
+    <!-- 5 - Classes / podemos repetir a mesma class em vários elementos -->
+    <p class="parágrafo">Algum texto</p>
+    <p class="parágrafo">Outro texto</p>
+    <p class="parágrafo">Último texto</p>
+
+    <!-- 6 - id / não podemos repetir o mesmo id em vários elementos / não pode colocar espaço dentro de um id-->
+    <h2 id="titulo-exclusivo">Um título que tem id</h2>
+
+    <!-- 7 - Especificidade no CSS -->
+    <h2 class="titulo" id="algum-titulo">Algum texto</h2>
+    <h2 class="titulo">Algum texto</h2>
+    <h2>Algum texto</h2>
+
+    <!-- 8 - Hexadecimal -->
+    <p class="hexadecimal">Parágrafo com Hexadecimal</p>
+    
+
+</body>
+</html>
