@@ -1,0 +1,47 @@
+/* * significa aplicar em toda a página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    /* deixa a font um pouco menos pixelada */
+    -webkit-font-smoothing: antialiased; 
+}
+
+:root {
+    /* tudo que colocamos aqui é aplicado na página do html inteira */
+    /* criação de variável começa com -- */
+    --main-bg: #19a1ae;
+    --card-bg: #fff;
+}
+
+body {
+    background: var(--main-bg);
+    /* border: 1px solid red; */
+    /* unidade de medida vh = viewport height = altura disponível no navegador do usuário - porcentagem de 0 a 100 */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    /* border: 2px solid blue; - foi colocada só para visualização didática*/
+    width: 100%;
+    max-width: 21.875rem;
+}
+
+section {
+    background: var(--card-bg);
+    /* px,cm,mm,pt = medida fixa - vai ficar na medida independente da configuração do usuário
+    rem,em,% = medida relativa - se adaptará de acordo com a configuração do navegador do usuário
+    1rem = 16px por padrão*/
+    /* max-width pode ser menor mas o maximo de largura é o determinado no código */
+    /* max-width: 21.875rem; - dispensável porque colocamos no main que é o container do section porque está acima/envolta dele */
+    border-radius: 0.9375rem;
+}
+
+.fundo-oval img {
+    border-radius: 0.9375rem 0.9375rem 0 0;
+    display: block;
+}
