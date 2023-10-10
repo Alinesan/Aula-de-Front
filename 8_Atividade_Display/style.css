@@ -1,0 +1,50 @@
+section {
+    border: 2px solid red;
+    /* Largura máxima de 600px */
+    max-width: 600px;
+    /* Estar centralizado na página usando o margin */
+    margin-inline: auto;
+}
+
+.primeira {
+    border: 2px solid blue;
+    /* Largura: */
+    width: 200px;
+    /* Altura: */
+    height: 100px;
+    /* Margem: */
+    margin: 2px;
+    /* Preenchimento: */
+    padding-top: 10px;
+    /* Alinhamento do texto - centro */
+    text-align: center;
+    display: inline-block;
+}
+.segunda {
+    border: 2px solid blue;
+    /* Largura: */
+    width: 500px;
+    /* Altura: */
+    height: 200px;
+    /* Margem: */
+    margin: 2px;
+    /* Preenchimento: */
+    padding-top: 20px;
+    /* Alinhamento do texto - centro */
+    text-align: center;
+    display: block;
+}
+.terceira {
+    border: 2px solid blue;
+    /* Largura: */
+    width: 300px;
+    /* Altura: */
+    height: 100px;
+    /* Margem: */
+    margin: 2px;
+    /* Preenchimento: */
+    padding-top: 50px;
+    /* Alinhamento do texto - centro */
+    text-align: center;
+    display: flex;
+}
